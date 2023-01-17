@@ -1,0 +1,153 @@
+.login {
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.login-block {
+    width: 100%;
+    background-color: #f1ed3c;
+    border-radius: 5px;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 375px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login-block-error {
+    color: #fc0000;
+}
+
+.login-block .login-block-form {
+    width: 100%;
+}
+
+.login-block input {
+    width: 100%;
+    max-width: 450px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.login-block button {
+    padding: 10px 15px;
+    background-color: #99cc34;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.resume-page {
+    justify-content: flex-start;
+}
+.resume-page {
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume-search {
+    width: 768px;
+}
+
+.resume-search h1 {
+    padding: 25px 10px;
+}
+
+.resume-search .resume-search-filter {
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.resume-search .resume-search-filter button,
+.resume-search .resume-search-filter input {
+    padding: 15px;
+}
+
+.resume-search .resume-search-filter button {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.resume-search .resume-search-filter input {
+    flex-grow: 5;
+}
+
+.resume-item {
+    background-color: #fff;
+    margin-bottom: 25px;
+    width: 768px;
+}
+
+.resume-item .resume-item-header {
+    background-color: #d1f6f0;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.resume-item .resume-item-header .resume-item-header-text {
+    flex-grow: 3;
+    text-align: center;
+}
+
+.resume-item .resume-item-header .resume-item-header-img {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.resume-item .resume-item-header .resume-item-header-img img {
+    width: 100px;
+}
+
+.resume-main {
+    display: flex;
+    align-items: flex-start;
+}
+
+.resume-main > .resume-main-aside {
+    width: 20%;
+    margin: 15px;
+    background-color: #f9e1e2;
+    padding: 15px;
+}
+
+.resume-main > .resume-main-section {
+    width: 80%;
+    margin: 15px;
+}
+
+.resume-main > .resume-main-aside p {
+    padding: 5px;
+    background-color: #a9a9a9;
+}
+
+.resume-main > .resume-main-aside ul {
+    list-style: none;
+    text-align: right;
+    padding: 15px 0;
+}
+
+.resume-main > .resume-main-section .resume-main-section-details > div {
+    padding: 0 25px 15px;
+}
+
+.resume-main > .resume-main-section .resume-main-section-details h2 {
+    padding: 15px 0;
+}
+
+.resume-main > .resume-main-section .resume-main-section-details ul {
+    padding-left: 20px;
+}
+
+.resume-main > .resume-main-section .resume-main-section-details label {
+    font-weight: bold;
+}

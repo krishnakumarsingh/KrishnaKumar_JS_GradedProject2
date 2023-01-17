@@ -1,0 +1,441 @@
+[{
+    "name": "Krishna Kumar",
+    "job": "Software Engineer",
+    "img": "./assets/user.png",
+    "asideFeature": [
+        {
+            "heading": "Personal Information",
+            "list": [{
+                "text": "99999 99999",
+                "link": false
+            }, {
+                "text": "test@gmail.com",
+                "link": false
+            }, {
+                "text": "LinkdIn",
+                "linkPath": "linkdin.com",
+                "link": true
+            }]
+        }, {
+            "heading": "Technical Skills",
+            "list": [{
+                "text": "HTML",
+                "link": false
+            }, {
+                "text": "CSS",
+                "link": false
+            }, {
+                "text": "JavaScript",
+                "link": false
+            }]
+        }, {
+            "heading": "Hobbies",
+            "list": [{
+                "text": "Wildlife",
+                "link": false
+            }, {
+                "text": "Dance",
+                "link": false
+            }, {
+                "text": "Workout",
+                "link": false
+            }]
+        }
+    ],
+    "details": [
+        {
+            "headline": "Work Experience in previous company",
+            "list": [{
+                "label": "Company Name",
+                "text": "Harman"
+            }, {
+                "label": "Position",
+                "text": "Associate Engineer"
+            }, {
+                "label": "Start Date",
+                "text": "2013-01-01"
+            }, {
+                "label": "End Date",
+                "text": "2014-01-01"
+            }, {
+                "label": "Summary",
+                "text": "Associate engmeer with development, testing verification and validation experience on Car UI display systems.Performed phone projection development of user stories and testing with infotainment system such as Android auto .Car playAnalyzed requirements . created test plans, executed test cases for connectivity epic such as C-connect, F-connect.Good at analyzing DLT logs and analyzing the code refactor areas."
+            }]
+        }, {
+            "headline": "Projects",
+            "list": [{
+                "label": "Diabetic Retinopaty",
+                "text": "created a GUI using QT designer which will take image of retina as input, mput image will be processed and compare with the images present m database and then ified as one of DR stage or normal.OpenCV and image processing concepts are used. survey paper on this project is publish in 2nd imtemational conference on Topical Transcend in Science, Technology & Management."
+            }]
+        }, {
+            "headline": "Education",
+            "listStyle": true,
+            "list": [{
+                "label": "UG",
+                "text": "Sai Vidya Institute of Technology, BE Computer Science and Engineering, 2011-01-01, 2013-01-01, 8.7"
+            }, {
+                "label": "PU",
+                "text": "KV AFS YELAHANKA, 8.7"
+            }, {
+                "label": "High School",
+                "text": "KV AFS Bhuj. 8.7"
+            }]
+        }, {
+            "headline": "Internship",
+            "listStyle": true,
+            "list": [{
+                "label": "Company Name",
+                "text": "IBM"
+            }, {
+                "label": "Position",
+                "text": "Intern"
+            }, {
+                "label": "Start Date",
+                "text": "2013-01-01"
+            }, {
+                "label": "End Date",
+                "text": "2014-01-01"
+            }, {
+                "label": "Summary",
+                "text": "Leamed about Tools used for website testing such as Deep Trawal NVDA, web developer extension, OpenVAS, Leamed about the importance and concept of OWASP. Learned React JS and worked for Frontend development with professional."
+            }]
+        }, {
+            "headline": "Achievements",
+            "listStyle": true,
+            "list": [{
+                "label": "",
+                "text": "Attended 5 days industry orientation workshop organized by free software movement"
+            }]
+        }
+    ]
+}, {
+    "name": "Krishna Kumar 1",
+    "job": "It",
+    "img": "./assets/user.png",
+    "asideFeature": [
+        {
+            "heading": "Personal Information",
+            "list": [{
+                "text": "99999 99999",
+                "link": false
+            }, {
+                "text": "test@gmail.com",
+                "link": false
+            }, {
+                "text": "LinkdIn",
+                "linkPath": "linkdin.com",
+                "link": true
+            }]
+        }, {
+            "heading": "Technical Skills",
+            "list": [{
+                "text": "HTML",
+                "link": false
+            }, {
+                "text": "CSS",
+                "link": false
+            }, {
+                "text": "JavaScript",
+                "link": false
+            }]
+        }, {
+            "heading": "Hobbies",
+            "list": [{
+                "text": "Wildlife",
+                "link": false
+            }, {
+                "text": "Dance",
+                "link": false
+            }, {
+                "text": "Workout",
+                "link": false
+            }]
+        }
+    ],
+    "details": [
+        {
+            "headline": "Work Experience in previous company",
+            "list": [{
+                "label": "Company Name",
+                "text": "Harman"
+            }, {
+                "label": "Position",
+                "text": "Associate Engineer"
+            }, {
+                "label": "Start Date",
+                "text": "2013-01-01"
+            }, {
+                "label": "End Date",
+                "text": "2014-01-01"
+            }, {
+                "label": "Summary",
+                "text": "Associate engmeer with development, testing verification and validation experience on Car UI display systems.Performed phone projection development of user stories and testing with infotainment system such as Android auto .Car playAnalyzed requirements . created test plans, executed test cases for connectivity epic such as C-connect, F-connect.Good at analyzing DLT logs and analyzing the code refactor areas."
+            }]
+        }, {
+            "headline": "Projects",
+            "list": [{
+                "label": "Diabetic Retinopaty",
+                "text": "created a GUI using QT designer which will take image of retina as input, mput image will be processed and compare with the images present m database and then ified as one of DR stage or normal.OpenCV and image processing concepts are used. survey paper on this project is publish in 2nd imtemational conference on Topical Transcend in Science, Technology & Management."
+            }]
+        }, {
+            "headline": "Education",
+            "listStyle": true,
+            "list": [{
+                "label": "UG",
+                "text": "Sai Vidya Institute of Technology, BE Computer Science and Engineering, 2011-01-01, 2013-01-01, 8.7"
+            }, {
+                "label": "PU",
+                "text": "KV AFS YELAHANKA, 8.7"
+            }, {
+                "label": "High School",
+                "text": "KV AFS Bhuj. 8.7"
+            }]
+        }, {
+            "headline": "Internship",
+            "listStyle": true,
+            "list": [{
+                "label": "Company Name",
+                "text": "IBM"
+            }, {
+                "label": "Position",
+                "text": "Intern"
+            }, {
+                "label": "Start Date",
+                "text": "2013-01-01"
+            }, {
+                "label": "End Date",
+                "text": "2014-01-01"
+            }, {
+                "label": "Summary",
+                "text": "Leamed about Tools used for website testing such as Deep Trawal NVDA, web developer extension, OpenVAS, Leamed about the importance and concept of OWASP. Learned React JS and worked for Frontend development with professional."
+            }]
+        }, {
+            "headline": "Achievements",
+            "listStyle": true,
+            "list": [{
+                "label": "",
+                "text": "Attended 5 days industry orientation workshop organized by free software movement"
+            }]
+        }
+    ]
+}, {
+    "name": "Krishna Kumar 2",
+    "job": "Engineer",
+    "img": "./assets/user.png",
+    "asideFeature": [
+        {
+            "heading": "Personal Information",
+            "list": [{
+                "text": "99999 99999",
+                "link": false
+            }, {
+                "text": "test@gmail.com",
+                "link": false
+            }, {
+                "text": "LinkdIn",
+                "linkPath": "linkdin.com",
+                "link": true
+            }]
+        }, {
+            "heading": "Technical Skills",
+            "list": [{
+                "text": "HTML",
+                "link": false
+            }, {
+                "text": "CSS",
+                "link": false
+            }, {
+                "text": "JavaScript",
+                "link": false
+            }]
+        }, {
+            "heading": "Hobbies",
+            "list": [{
+                "text": "Wildlife",
+                "link": false
+            }, {
+                "text": "Dance",
+                "link": false
+            }, {
+                "text": "Workout",
+                "link": false
+            }]
+        }
+    ],
+    "details": [
+        {
+            "headline": "Work Experience in previous company",
+            "list": [{
+                "label": "Company Name",
+                "text": "Harman"
+            }, {
+                "label": "Position",
+                "text": "Associate Engineer"
+            }, {
+                "label": "Start Date",
+                "text": "2013-01-01"
+            }, {
+                "label": "End Date",
+                "text": "2014-01-01"
+            }, {
+                "label": "Summary",
+                "text": "Associate engmeer with development, testing verification and validation experience on Car UI display systems.Performed phone projection development of user stories and testing with infotainment system such as Android auto .Car playAnalyzed requirements . created test plans, executed test cases for connectivity epic such as C-connect, F-connect.Good at analyzing DLT logs and analyzing the code refactor areas."
+            }]
+        }, {
+            "headline": "Projects",
+            "list": [{
+                "label": "Diabetic Retinopaty",
+                "text": "created a GUI using QT designer which will take image of retina as input, mput image will be processed and compare with the images present m database and then ified as one of DR stage or normal.OpenCV and image processing concepts are used. survey paper on this project is publish in 2nd imtemational conference on Topical Transcend in Science, Technology & Management."
+            }]
+        }, {
+            "headline": "Education",
+            "listStyle": true,
+            "list": [{
+                "label": "UG",
+                "text": "Sai Vidya Institute of Technology, BE Computer Science and Engineering, 2011-01-01, 2013-01-01, 8.7"
+            }, {
+                "label": "PU",
+                "text": "KV AFS YELAHANKA, 8.7"
+            }, {
+                "label": "High School",
+                "text": "KV AFS Bhuj. 8.7"
+            }]
+        }, {
+            "headline": "Internship",
+            "listStyle": true,
+            "list": [{
+                "label": "Company Name",
+                "text": "IBM"
+            }, {
+                "label": "Position",
+                "text": "Intern"
+            }, {
+                "label": "Start Date",
+                "text": "2013-01-01"
+            }, {
+                "label": "End Date",
+                "text": "2014-01-01"
+            }, {
+                "label": "Summary",
+                "text": "Leamed about Tools used for website testing such as Deep Trawal NVDA, web developer extension, OpenVAS, Leamed about the importance and concept of OWASP. Learned React JS and worked for Frontend development with professional."
+            }]
+        }, {
+            "headline": "Achievements",
+            "listStyle": true,
+            "list": [{
+                "label": "",
+                "text": "Attended 5 days industry orientation workshop organized by free software movement"
+            }]
+        }
+    ]
+}, {
+    "name": "Krishna Kumar 4",
+    "job": "Engineer",
+    "img": "./assets/user.png",
+    "asideFeature": [
+        {
+            "heading": "Personal Information",
+            "list": [{
+                "text": "99999 99999",
+                "link": false
+            }, {
+                "text": "test@gmail.com",
+                "link": false
+            }, {
+                "text": "LinkdIn",
+                "linkPath": "linkdin.com",
+                "link": true
+            }]
+        }, {
+            "heading": "Technical Skills",
+            "list": [{
+                "text": "HTML",
+                "link": false
+            }, {
+                "text": "CSS",
+                "link": false
+            }, {
+                "text": "JavaScript",
+                "link": false
+            }]
+        }, {
+            "heading": "Hobbies",
+            "list": [{
+                "text": "Wildlife",
+                "link": false
+            }, {
+                "text": "Dance",
+                "link": false
+            }, {
+                "text": "Workout",
+                "link": false
+            }]
+        }
+    ],
+    "details": [
+        {
+            "headline": "Work Experience in previous company",
+            "list": [{
+                "label": "Company Name",
+                "text": "Harman"
+            }, {
+                "label": "Position",
+                "text": "Associate Engineer"
+            }, {
+                "label": "Start Date",
+                "text": "2013-01-01"
+            }, {
+                "label": "End Date",
+                "text": "2014-01-01"
+            }, {
+                "label": "Summary",
+                "text": "Associate engmeer with development, testing verification and validation experience on Car UI display systems.Performed phone projection development of user stories and testing with infotainment system such as Android auto .Car playAnalyzed requirements . created test plans, executed test cases for connectivity epic such as C-connect, F-connect.Good at analyzing DLT logs and analyzing the code refactor areas."
+            }]
+        }, {
+            "headline": "Projects",
+            "list": [{
+                "label": "Diabetic Retinopaty",
+                "text": "created a GUI using QT designer which will take image of retina as input, mput image will be processed and compare with the images present m database and then ified as one of DR stage or normal.OpenCV and image processing concepts are used. survey paper on this project is publish in 2nd imtemational conference on Topical Transcend in Science, Technology & Management."
+            }]
+        }, {
+            "headline": "Education",
+            "listStyle": true,
+            "list": [{
+                "label": "UG",
+                "text": "Sai Vidya Institute of Technology, BE Computer Science and Engineering, 2011-01-01, 2013-01-01, 8.7"
+            }, {
+                "label": "PU",
+                "text": "KV AFS YELAHANKA, 8.7"
+            }, {
+                "label": "High School",
+                "text": "KV AFS Bhuj. 8.7"
+            }]
+        }, {
+            "headline": "Internship",
+            "listStyle": true,
+            "list": [{
+                "label": "Company Name",
+                "text": "IBM"
+            }, {
+                "label": "Position",
+                "text": "Intern"
+            }, {
+                "label": "Start Date",
+                "text": "2013-01-01"
+            }, {
+                "label": "End Date",
+                "text": "2014-01-01"
+            }, {
+                "label": "Summary",
+                "text": "Leamed about Tools used for website testing such as Deep Trawal NVDA, web developer extension, OpenVAS, Leamed about the importance and concept of OWASP. Learned React JS and worked for Frontend development with professional."
+            }]
+        }, {
+            "headline": "Achievements",
+            "listStyle": true,
+            "list": [{
+                "label": "",
+                "text": "Attended 5 days industry orientation workshop organized by free software movement"
+            }]
+        }
+    ]
+}]

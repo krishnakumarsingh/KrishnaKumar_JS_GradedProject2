@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script>
+        (function() {
+            localStorage.setItem("username", "admin");
+            localStorage.setItem("password", "admin");
+            if(localStorage.getItem("token")) {
+                window.location.href = "./resume.html";
+            } else if(!localStorage.getItem("token")) {
+                window.location.href = "/index.html";
+            }
+        })();
+        function login(e) {
+            e.preventDefault();
+            let username = document.getElementsByName("username")[0].value;
+            let password = document.getElementsByName("password")[0].value;
+            if(username === localStorage.getItem("username") && password === localStorage.getItem("password")) {
+                document.getElementById("login-message").innerHTML = "";
+                localStorage.setItem("token", "xyz1234");
+                window.location.href = "./resume.html";
+            } else {
+                document.getElementById("login-message").innerHTML = "<h1 class='login-block-error'>Print invalid User Name/ Password !!</h1>"
+            }
+            return false;
+        }
+    </script>
+    <script src="./js/login.js"></script>
+</head>
+<body>
+    <div class="login">
+        <div class="login-block">
+            <div id="login-message"></div>
+            <form class="login-block-form" onsubmit="login(event)">
+                <input type="text" placeholder="User Name" name="username" /></br>
+                <input type="password" placeholder="Password" name="password" /></br>
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
