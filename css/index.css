@@ -85,6 +85,10 @@
     background-color: #fff;
     margin-bottom: 25px;
     width: 768px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    overflow: auto;
+    box-shadow: 0px 4px 20px 0px #ccc;
 }
 
 .resume-item .resume-item-header {
@@ -150,4 +154,15 @@
 
 .resume-main > .resume-main-section .resume-main-section-details label {
     font-weight: bold;
+}
+
+.no-result-found {
+    display: flex;
+    align-items: center;
+    padding: 5% 20%;
+}
+
+.no-result-found img {
+    width: 20%;
+    margin-right: 50px;
 }

@@ -7,9 +7,21 @@ Quiz.prototype.loadResume = function () {
     this.loadContainer();
 };
 
-Quiz.prototype.createList = function (ele) {
+Quiz.prototype.createSkillsList = function (ele, list) {
+    let listHTML = "";
+    list.forEach(item => listHTML += `<li>${item}</li>`)
+    let asideSkillsHTML = `<div class="resume-main-aside-feature">
+        <p>${this.data["skills"].name}</p>
+        <ul>
+            ${listHTML}
+        </ul>
+    </div>`;
+    ele.innerHTML = asideSkillsHTML;
+};
+
+Quiz.prototype.createList = function (ele, list) {
     let asideHTML = "";
-    this.data.asideFeature.forEach(item => {
+    list.forEach(item => {
         let listHTML = "";
         item.list.forEach(item => listHTML += `<li>${item.link ? `<a href=${item.linkPath}>${item.text}</a>` : item.text}</li>`)
         asideHTML += `<div class="resume-main-aside-feature">
@@ -22,53 +34,102 @@ Quiz.prototype.createList = function (ele) {
     ele.innerHTML = asideHTML;
 };
 
-Quiz.prototype.createresumeMainSection = function (ele) {
+Quiz.prototype.createresumeMainSection = function (ele, arr) {
     let detailsHTML = "";
-    this.data.details.forEach(item => {
+    let arrUl = ["Internship", "education", "achievements"];
+    arr.forEach(item => {
         let listHTML = "";
-        let listLi = "";
-        item.list.forEach(i => listLi += `<li><label>${i.label ? i.label+':' : ''}</label> ${i.text}</li>`);
-        
-        item.list.forEach(i => {
-            listHTML += `<div>
-                ${i.label === "" ? "" : `<label>${i.label}:</label>`}
-                <span>${i.text}</span>
-            </div>`});
-        detailsHTML += `<div class="resume-main-section-details">
-            <h2>${item.headline}</h2>
-            ${item.listStyle ? `<div><ul>${listLi}</ul></div>` : listHTML}
-        </div>`;
+        const listObj = (list) => {
+            let listHTML = "";
+            Object.keys(list).forEach(i => listHTML += `${list[i]}, `);
+            return listHTML;
+        };
+        if(item !== "projects") {
+                Object.keys(this.data[item]).forEach(list => {
+                    let currentList = `<div>
+                        ${item !== "achievements" ? `<label>${list}:</label>` : ""}
+                        <span>${typeof this.data[item][list] === "object" ? listObj(this.data[item][list]) : this.data[item][list]}</span>
+                    </div>`
+                    listHTML += arrUl.indexOf(item) !== -1 ? `<li>${currentList}</li>` : currentList;
+                });
+
+            console.log(item)
+                detailsHTML += `<div class="resume-main-section-details">
+                    <h2 class="capitalize">${item === "work" ? "Work Experience in previous company" : item}</h2>
+                    ${arrUl.indexOf(item) !== -1 ? `<ul>${listHTML}</ul>`: listHTML}
+            </div>`;
+        } else {
+            let listHTML = `<div>
+                        ${`<label>${this.data[item]["name"]}:</label>`}
+                        <span>${this.data[item]["description"]}</span>
+                    </div>`
+            detailsHTML += `<div class="resume-main-section-details">
+                    <h2 class="capitalize">${item}</h2>
+                    ${listHTML}
+            </div>`;
+        }
     });
     ele.innerHTML = detailsHTML;
 };
 
 Quiz.prototype.loadList = function () {
     const aside = document.getElementById("aside");
+    const skills = document.getElementById("skills");
+    const interests = document.getElementById("interests");
     const resumeMainSection = document.getElementById("resumeMainSection");
 
-    this.createList(aside);
-    this.createresumeMainSection(resumeMainSection);
+    let asideFeature = [
+        {
+            "heading": "Personal Information",
+            "list": [{
+                "text": this.data["basics"].phone,
+                "link": false
+            }, {
+                "text": this.data["basics"].email,
+                "link": false
+            }, {
+                "text": this.data["basics"]?.["profiles"].network,
+                "linkPath": this.data["basics"]["profiles"].url,
+                "link": true
+            }]
+        }
+    ];
+    let createArrayMainSection = ["work", "projects", "education", "Internship", "achievements"];
+    this.createList(aside, asideFeature);
+    this.createSkillsList(skills, this.data["skills"]["keywords"]);
+    this.createSkillsList(interests, this.data["interests"]["hobbies"]);
+    this.createresumeMainSection(resumeMainSection, createArrayMainSection);
 }
 
 Quiz.prototype.loadContainer = function () {
     const resumeItem = document.getElementById("resumeItem");
-    // if(this.data) {
-        let html = `<div class="resume-item-header">
+    let html = "";
+    if(this.data) {
+        html = `<div class="resume-item-header">
                 <div class="resume-item-header-text">
-                    <h2 id="name">${this.data.name}</h2>
-                    <h3 id="headline">Applied For : ${this.data.job}</h3>
+                    <h2 id="name">${this.data["basics"].name}</h2>
+                    <h3 id="headline">Applied For : ${this.data["basics"].AppliedFor}</h3>
                 </div>
                 <div class="resume-item-header-img" id="img">
-                    <img src="${this.data.img}" alt="Img" />
+                    <img src="${this.data["basics"].image}" alt="Img" />
                 </div>
             </div>
             <div class="resume-main">
                 <aside class="resume-main-aside">
                     <div id="aside"></div>
+                    <div id="skills"></div>
+                    <div id="interests"></div>
                 </aside>
                 <section class="resume-main-section" id="resumeMainSection"></section>
             </div>`;
         resumeItem.innerHTML = html;
         this.loadList();
-    // }
+    } else {
+        html = `<div class="no-result-found">
+                <img src="./assets/sad-face.png" />
+                <h2>No such results found</h2>
+            </div>`
+        resumeItem.innerHTML = html;
+        console.log("Hello");
+    }
 }
