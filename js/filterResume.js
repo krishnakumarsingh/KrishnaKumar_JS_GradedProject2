@@ -1,13 +1,14 @@
-function Filter() {
-    this.data = {};
-    this.index = 0;
-    this.currentData = {};
+class Filter {
+    constructor(items) {
+        this.data = {};
+        this.index = 0;
+        this.currentData = {};
+    }
 };
 
 Filter.prototype.loadResume = function () {
-    console.log("Hello## ", this.data, this.currentData);
-    const quiz = new Quiz(this.currentData[this.index]);
-    quiz.loadResume();
+    const resumeCreate = new ResumeCreate(this.currentData[this.index]);
+    resumeCreate.loadResume();
 }
 
 Filter.prototype.loadResumeData = function () {
@@ -36,7 +37,6 @@ Filter.prototype.prevResume = function () {
 
 Filter.prototype.searchResume = function (searchText) {
     let filterData = filter.data;
-    console.log(filterData)
     const searchTextT = searchText && searchText.target.value && searchText.target.value.toLowerCase();
     let currentData = filterData.filter(item => {
         const job = item["basics"].AppliedFor && item["basics"].AppliedFor.toLowerCase();
@@ -67,7 +67,6 @@ Filter.prototype.loadFilterBtn = function () {
 };
 
 Filter.prototype.loadFilterContainer = function () {
-    console.log("Data::", this.data, this.currentData);
     const filterContainer = document.getElementById("filterContainer");
     let html = `<div id="prevWrap"></div>
             <input type="text" name="search" id="searchResume" placeholder="Search for keywords to filter the result" />

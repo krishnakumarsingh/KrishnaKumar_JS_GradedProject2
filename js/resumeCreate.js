@@ -1,13 +1,15 @@
-function Quiz(items) {
-    this.data = items;
-    this.index = 0;
+class ResumeCreate {
+    constructor(items) {
+        this.data = items;
+        this.index = 0;
+    }
 };
 
-Quiz.prototype.loadResume = function () {
+ResumeCreate.prototype.loadResume = function () {
     this.loadContainer();
 };
 
-Quiz.prototype.createSkillsList = function (ele, list) {
+ResumeCreate.prototype.createSkillsList = function (ele, list) {
     let listHTML = "";
     list.forEach(item => listHTML += `<li>${item}</li>`)
     let asideSkillsHTML = `<div class="resume-main-aside-feature">
@@ -19,7 +21,7 @@ Quiz.prototype.createSkillsList = function (ele, list) {
     ele.innerHTML = asideSkillsHTML;
 };
 
-Quiz.prototype.createList = function (ele, list) {
+ResumeCreate.prototype.createList = function (ele, list) {
     let asideHTML = "";
     list.forEach(item => {
         let listHTML = "";
@@ -34,7 +36,7 @@ Quiz.prototype.createList = function (ele, list) {
     ele.innerHTML = asideHTML;
 };
 
-Quiz.prototype.createresumeMainSection = function (ele, arr) {
+ResumeCreate.prototype.createresumeMainSection = function (ele, arr) {
     let detailsHTML = "";
     let arrUl = ["Internship", "education", "achievements"];
     arr.forEach(item => {
@@ -53,7 +55,6 @@ Quiz.prototype.createresumeMainSection = function (ele, arr) {
                     listHTML += arrUl.indexOf(item) !== -1 ? `<li>${currentList}</li>` : currentList;
                 });
 
-            console.log(item)
                 detailsHTML += `<div class="resume-main-section-details">
                     <h2 class="capitalize">${item === "work" ? "Work Experience in previous company" : item}</h2>
                     ${arrUl.indexOf(item) !== -1 ? `<ul>${listHTML}</ul>`: listHTML}
@@ -72,7 +73,7 @@ Quiz.prototype.createresumeMainSection = function (ele, arr) {
     ele.innerHTML = detailsHTML;
 };
 
-Quiz.prototype.loadList = function () {
+ResumeCreate.prototype.loadList = function () {
     const aside = document.getElementById("aside");
     const skills = document.getElementById("skills");
     const interests = document.getElementById("interests");
@@ -101,7 +102,7 @@ Quiz.prototype.loadList = function () {
     this.createresumeMainSection(resumeMainSection, createArrayMainSection);
 }
 
-Quiz.prototype.loadContainer = function () {
+ResumeCreate.prototype.loadContainer = function () {
     const resumeItem = document.getElementById("resumeItem");
     let html = "";
     if(this.data) {
@@ -130,6 +131,5 @@ Quiz.prototype.loadContainer = function () {
                 <h2>No such results found</h2>
             </div>`
         resumeItem.innerHTML = html;
-        console.log("Hello");
     }
 }
