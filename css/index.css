@@ -46,6 +46,7 @@
 .resume-page {
     justify-content: flex-start;
 }
+
 .resume-page {
     flex-direction: column;
     align-items: center;
@@ -117,42 +118,42 @@
     align-items: flex-start;
 }
 
-.resume-main > .resume-main-aside {
+.resume-main>.resume-main-aside {
     width: 20%;
     margin: 15px;
     background-color: #f9e1e2;
     padding: 15px;
 }
 
-.resume-main > .resume-main-section {
+.resume-main>.resume-main-section {
     width: 80%;
     margin: 15px;
 }
 
-.resume-main > .resume-main-aside p {
+.resume-main>.resume-main-aside p {
     padding: 5px;
     background-color: #a9a9a9;
 }
 
-.resume-main > .resume-main-aside ul {
+.resume-main>.resume-main-aside ul {
     list-style: none;
     text-align: right;
     padding: 15px 0;
 }
 
-.resume-main > .resume-main-section .resume-main-section-details > div {
+.resume-main>.resume-main-section .resume-main-section-details>div {
     padding: 0 25px 15px;
 }
 
-.resume-main > .resume-main-section .resume-main-section-details h2 {
+.resume-main>.resume-main-section .resume-main-section-details h2 {
     padding: 15px 0;
 }
 
-.resume-main > .resume-main-section .resume-main-section-details ul {
+.resume-main>.resume-main-section .resume-main-section-details ul {
     padding-left: 20px;
 }
 
-.resume-main > .resume-main-section .resume-main-section-details label {
+.resume-main>.resume-main-section .resume-main-section-details label {
     font-weight: bold;
 }
 

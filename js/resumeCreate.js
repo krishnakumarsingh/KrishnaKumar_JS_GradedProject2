@@ -46,18 +46,18 @@ ResumeCreate.prototype.createresumeMainSection = function (ele, arr) {
             Object.keys(list).forEach(i => listHTML += `${list[i]}, `);
             return listHTML;
         };
-        if(item !== "projects") {
-                Object.keys(this.data[item]).forEach(list => {
-                    let currentList = `<div>
+        if (item !== "projects") {
+            Object.keys(this.data[item]).forEach(list => {
+                let currentList = `<div>
                         ${item !== "achievements" ? `<label>${list}:</label>` : ""}
                         <span>${typeof this.data[item][list] === "object" ? listObj(this.data[item][list]) : this.data[item][list]}</span>
                     </div>`
-                    listHTML += arrUl.indexOf(item) !== -1 ? `<li>${currentList}</li>` : currentList;
-                });
+                listHTML += arrUl.indexOf(item) !== -1 ? `<li>${currentList}</li>` : currentList;
+            });
 
-                detailsHTML += `<div class="resume-main-section-details">
+            detailsHTML += `<div class="resume-main-section-details">
                     <h2 class="capitalize">${item === "work" ? "Work Experience in previous company" : item}</h2>
-                    ${arrUl.indexOf(item) !== -1 ? `<ul>${listHTML}</ul>`: listHTML}
+                    ${arrUl.indexOf(item) !== -1 ? `<ul>${listHTML}</ul>` : listHTML}
             </div>`;
         } else {
             let listHTML = `<div>
@@ -105,7 +105,7 @@ ResumeCreate.prototype.loadList = function () {
 ResumeCreate.prototype.loadContainer = function () {
     const resumeItem = document.getElementById("resumeItem");
     let html = "";
-    if(this.data) {
+    if (this.data) {
         html = `<div class="resume-item-header">
                 <div class="resume-item-header-text">
                     <h2 id="name">${this.data["basics"].name}</h2>

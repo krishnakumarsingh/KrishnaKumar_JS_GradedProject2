@@ -24,13 +24,13 @@ Filter.prototype.loadResumeData = function () {
 };
 
 Filter.prototype.nextResume = function () {
-    if(filter.index === filter.data.length - 1) return;
+    if (filter.index === filter.data.length - 1) return;
     filter.index += 1;
     filter.loadFilterContainer();
 };
 
 Filter.prototype.prevResume = function () {
-    if(filter.index === 0) return;
+    if (filter.index === 0) return;
     filter.index -= 1;
     filter.loadFilterContainer();
 };
@@ -52,9 +52,9 @@ Filter.prototype.resumeEventBind = function () {
     const nextResume = document.getElementById("nextResume");
     const prevResume = document.getElementById("prevResume");
     const searchResume = document.getElementById("searchResume");
-    if(nextResume) nextResume.addEventListener("click", this.nextResume);
-    if(prevResume) prevResume.addEventListener("click", this.prevResume);
-    if(searchResume) searchResume.addEventListener("keyup", this.searchResume);
+    if (nextResume) nextResume.addEventListener("click", this.nextResume);
+    if (prevResume) prevResume.addEventListener("click", this.prevResume);
+    if (searchResume) searchResume.addEventListener("keyup", this.searchResume);
 };
 
 Filter.prototype.loadFilterBtn = function () {
