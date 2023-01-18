@@ -176,43 +176,53 @@
     .resume-search {
         padding: 10px;
     }
+
     .resume-search,
     .resume-item {
         width: 100%;
         box-sizing: border-box;
     }
+
     .resume-main {
         display: block;
     }
+
     .resume-main>.resume-main-aside {
         width: 100%;
         margin: 0;
         padding: 0;
     }
+
     .resume-main>.resume-main-aside ul {
         text-align: left;
         padding: 15px;
     }
+
     .resume-main>.resume-main-section {
         width: 100%;
         box-sizing: border-box;
     }
+
     .resume-main>.resume-main-section .resume-main-section-details>div {
         padding-left: 0;
         padding-right: 0;
     }
+
     .resume-search .resume-search-filter {
         margin-left: 0;
         margin-right: 0;
     }
+
     .resume-search .resume-search-filter button span {
         display: none;
     }
+
     .resume-search .resume-search-filter button,
     .resume-search .resume-search-filter input {
         padding: 15px 7px;
         margin: 0 5px;
     }
+
     .resume-search .resume-search-filter {
         padding: 25px 0px;
     }
