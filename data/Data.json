@@ -5,7 +5,7 @@
 			"basics": {
 				"name": "John Doe",
 				"AppliedFor": "Software Engineer",
-				"image": "./assets/user.png",
+				"image": "./assets/img/user.png",
 				"email": "john@gmail.com",
 				"phone": "9999999999",
 				"location": {
@@ -82,7 +82,7 @@
 			"basics": {
 				"name": "Riya",
 				"AppliedFor": "Software Engineer",
-				"image": "./assets/user.png",
+				"image": "./assets/img/user.png",
 				"email": "riya@gmail.com",
 				"phone": "9999999999",
 				"location": {
@@ -162,7 +162,7 @@
 			"basics": {
 				"name": "Rahul Roy",
 				"AppliedFor": "Manager",
-				"image": "./assets/user.png",
+				"image": "./assets/img/user.png",
 				"email": "roy@gmail.com",
 				"phone": "9999999999",
 				"location": {
@@ -241,7 +241,7 @@
 			"basics": {
 				"name": "Priya Desai",
 				"AppliedFor": "HR",
-				"image": "./assets/user.png",
+				"image": "./assets/img/user.png",
 				"email": "Priya@gmail.com",
 				"phone": "9999999999",
 				"location": {
@@ -318,7 +318,7 @@
 			"basics": {
 				"name": "Rakesh Ranjan",
 				"AppliedFor": "Manager",
-				"image": "./assets/user.png",
+				"image": "./assets/img/user.png",
 				"email": "Priya@gmail.com",
 				"phone": "9999999999",
 				"location": {
@@ -395,7 +395,7 @@
 			"basics": {
 				"name": "Godse",
 				"AppliedFor": "Manager",
-				"image": "./assets/user.png",
+				"image": "./assets/img/user.png",
 				"email": "Priya@gmail.com",
 				"phone": "9999999999",
 				"location": {

@@ -58,8 +58,8 @@ Filter.prototype.resumeEventBind = function () {
 };
 
 Filter.prototype.loadFilterBtn = function () {
-    const prev = `<button id="prevResume" class="${this.currentData.length === 0 || (this.currentData && this.index === 0) ? 'hide' : ''}">Previous</button>`;
-    const nxt = `<button id="nextResume" class="${this.currentData.length === 0 || (this.currentData && this.currentData.length - 1 === this.index) ? 'hide' : ''}">Next</button>`;
+    const prev = `<button id="prevResume" class="${this.currentData.length === 0 || (this.currentData && this.index === 0) ? 'hide' : ''}"><i class="fas fa-solid fa-caret-left"></i><span>Previous</span></button>`;
+    const nxt = `<button id="nextResume" class="${this.currentData.length === 0 || (this.currentData && this.currentData.length - 1 === this.index) ? 'hide' : ''}"><span>Next</span><i class="fas fa-solid fa-caret-right"></i></button>`;
     const prevWrap = document.getElementById("prevWrap");
     const nxtWrap = document.getElementById("nxtWrap");
     prevWrap.innerHTML = prev;
