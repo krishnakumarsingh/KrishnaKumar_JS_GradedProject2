@@ -127,7 +127,7 @@ ResumeCreate.prototype.loadContainer = function () {
         this.loadList();
     } else {
         html = `<div class="no-result-found">
-                <img src="./assets/sad-face.png" />
+                <img src="./assets/img/sad-face.png" />
                 <h2>No such results found</h2>
             </div>`
         resumeItem.innerHTML = html;

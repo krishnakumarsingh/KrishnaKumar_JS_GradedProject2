@@ -21,7 +21,7 @@ Login.prototype.validation = function (e) {
         localStorage.setItem("token", "xyz1234");
         window.location.href = "./resume.html";
     } else {
-        document.getElementById("login-message").innerHTML = "<h1 class='login-block-error'>Print invalid User Name/ Password !!</h1>"
+        document.getElementById("login-message").innerHTML = "<h1 class='login-block-error'>Invalid User Name/ Password !!</h1>"
     }
     return false;
 }

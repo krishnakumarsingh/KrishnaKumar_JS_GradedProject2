@@ -67,6 +67,12 @@ Filter.prototype.loadFilterBtn = function () {
 };
 
 Filter.prototype.loadFilterContainer = function () {
+    const logout = document.getElementById("logout");
+    logout.addEventListener("click", () => {
+        console.log("Logout");
+        localStorage.removeItem("token");
+        window.location.href = "./";
+    });
     const filterContainer = document.getElementById("filterContainer");
     let html = `<div id="prevWrap"></div>
             <input type="text" name="search" id="searchResume" placeholder="Search for keywords to filter the result" />
