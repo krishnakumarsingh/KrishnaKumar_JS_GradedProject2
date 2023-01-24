@@ -6,6 +6,11 @@ class ResumeCreate {
 };
 
 ResumeCreate.prototype.loadResume = function () {
+    if (localStorage.getItem("token") && !window.location.pathname === "/resume.html") {
+        window.location.pathname = "./resume.html";
+    } else if (window.location.pathname !== "/" && window.location.pathname !== "/index.html" && !localStorage.getItem("token")) {
+        window.location.href = "./";
+    }
     this.loadContainer();
 };
 
