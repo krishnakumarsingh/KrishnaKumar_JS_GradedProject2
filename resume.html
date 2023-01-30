@@ -13,11 +13,26 @@
 
 <body class="resume-page">
     <div class="resume-search">
-        <div class="resume-search-filter" id="filterContainer"></div>
+        <div class="resume-search-filter" id="filterContainer">
+            <div id="prevWrap">
+                <button id="prevResume">
+                    <i class="fas fa-solid fa-caret-left"></i>
+                    <span>Previous</span>
+                </button>
+            </div>
+            <input type="text" name="search" id="searchResume" placeholder="Search for keywords to filter the result" />
+            <div id="nxtWrap">
+                <button id="nextResume">
+                    <span>Next</span>
+                    <i class="fas fa-solid fa-caret-right"></i>
+                </button>
+            </div>
+        </div>
         <div class="resume-item" id="resumeItem"></div>
     </div>
     <button id="logout">Logout</button>
 </body>
 <script src="./js/resumeCreate.js"></script>
 <script src="./js/filterResume.js"></script>
+
 </html>
